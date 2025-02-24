@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .contact-page {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .form-container, .info-container {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* Form Styles */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .name-fields, .contact-fields {
+            display: flex;
+            gap: 10px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Info Container Styles */
+        .info-container {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-container h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .info-container p {
+            margin: 0 0 20px 0;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Code Link Styles */
+        .code-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .code-link a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .code-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .name-fields, .contact-fields {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-page">
+        <h1>Get In Touch.</h1>
+        <div class="container">
+            <div class="form-container">
+                <form   action="https://formspree.io/f/mzzdqnqv"
+						method="POST" >
+                    <div class="name-fields">
+                        <input type="text" name="First Name" placeholder="First Name" required>
+                        <input type="text" name="Last Name" placeholder="Last Name" required>
+                    </div>
+                    <div class="contact-fields">
+                        <input type="email" name="Email" placeholder="Email" required>
+                        <input type="tel" name="Phone" placeholder="Phone">
+                    </div>
+                    <select name="Subject">
+                        <option>Subject:</option>
+                        <option>General Inquiry</option>
+                        <option>Support</option>
+                        <option>Consultation</option>
+                    </select>
+                    <textarea name="Message" placeholder="Write A Message...." rows="5"></textarea>
+                    <button type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+            <div class="info-container">
+                <h3>Hours:</h3>
+                <p>Monday - Friday: 8 AM - 5:30 PM<br>Saturday - Sunday: Closed</p>
+
+                <h3>Call Us:</h3>
+                <p>(+234) 811-299-0517</p>
+				
+				<h3>Email Us:</h3>
+                <p>gihalsfoundation@gmail.com</p>
+
+                <h3>Location:</h3>
+                <p>7 Peoples Club Road, Ikot Effanga, Calabar, Cross River State</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
